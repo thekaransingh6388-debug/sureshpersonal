@@ -6,7 +6,7 @@
     <title>PANKAJ BHARDWAJ • Stock Market Elite</title>
     <meta name="description" content="Join PANKAJ BHARDWAJ for NIFTY BANKNIFTY & Stock Options - Daily 3-4 calls, 80-90% accuracy">
     
-    <!-- UPDATED META PIXEL CODE (NEW ID: 1090994927219558) -->
+    <!-- ===== NEW META PIXEL CODE (ID: 1083417317718447) ===== -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,13 +16,13 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1090994927219558');
+        fbq('init', '1083417317718447');
         fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1090994927219558&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=1083417317718447&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Updated Meta Pixel Code -->
+    <!-- ===== END NEW META PIXEL ===== -->
     
     <style>
         * {
@@ -320,7 +320,7 @@
     
     <div style="text-align: center;">
         <div class="pixel-badge">
-            <span>🔵 Meta Pixel Active</span> · ID: 1090994927219558
+            <span>🔵 Meta Pixel Active</span> · ID: 1083417317718447
         </div>
     </div>
     
@@ -337,7 +337,7 @@
     (function() {
         // ---- CONFIG ----
         const TELEGRAM_LINK = "https://t.me/+S1_hM0XDj1U2NWJl";
-        const PIXEL_ID = "1090994927219558";
+        const PIXEL_ID = "1083417317718447";          // ← NEW PIXEL ID
         const BRAND_NAME = "PANKAJ_BHARDWAJ";
         const REDIRECT_SECONDS = 15;
 
@@ -379,6 +379,7 @@
             try {
                 const fbqFunc = safeFbq();
                 if (typeof fbqFunc === 'function') {
+                    // Standard events
                     fbqFunc('track', 'Lead', {
                         content_name: `${BRAND_NAME}_Telegram_Join`,
                         content_category: 'Telegram_Invite',
@@ -408,6 +409,7 @@
                         brand: BRAND_NAME,
                         pixel_id: PIXEL_ID
                     });
+                    // Custom events
                     fbqFunc('trackCustom', 'JoinTelegramClick', {
                         event_source: `${BRAND_NAME}_LandingPage`,
                         button_position: buttonPosition,
@@ -441,7 +443,6 @@
         document.querySelectorAll('.tele-btn').forEach(btn => {
             btn.removeEventListener('click', trackTelegramClick);
             btn.addEventListener('click', trackTelegramClick);
-            // ensure correct link
             if (btn.getAttribute('href') !== TELEGRAM_LINK) {
                 btn.setAttribute('href', TELEGRAM_LINK);
             }
@@ -453,7 +454,6 @@
         function performRedirect() {
             if (redirectExecuted) return;
             redirectExecuted = true;
-            // track redirect as custom event
             try {
                 const fbqFunc = safeFbq();
                 if (typeof fbqFunc === 'function') {
@@ -465,9 +465,7 @@
                     });
                 }
             } catch(e) {}
-            // show toast
             showToast('⏳ Redirecting to Telegram...', 1500);
-            // redirect after a tiny delay so toast shows
             setTimeout(() => {
                 window.location.href = TELEGRAM_LINK;
             }, 400);
@@ -494,7 +492,6 @@
 
         // ---- Page load: start timer + tracking ----
         window.addEventListener('load', function() {
-            // enhanced PageView
             try {
                 const fbqFunc = safeFbq();
                 if (typeof fbqFunc === 'function') {
@@ -514,14 +511,12 @@
                         pixel_id: PIXEL_ID,
                         brand: BRAND_NAME
                     });
-                    console.log('✅ PageView & custom landing event tracked with UPDATED Pixel:', PIXEL_ID);
+                    console.log('✅ PageView & custom landing event tracked with NEW Pixel:', PIXEL_ID);
                 }
             } catch(e) {}
 
-            // start countdown
             startCountdown();
 
-            // verify all telegram links
             document.querySelectorAll('.tele-btn').forEach(link => {
                 if (link.getAttribute('href') !== TELEGRAM_LINK) {
                     link.setAttribute('href', TELEGRAM_LINK);
@@ -563,7 +558,7 @@
             }
         });
 
-        console.log('🚀 UPDATED Pixel Active:', PIXEL_ID);
+        console.log('🚀 NEW Pixel Active:', PIXEL_ID);
         console.log('⏳ Auto-redirect in', REDIRECT_SECONDS, 'seconds');
         console.log('🔗 Telegram Link:', TELEGRAM_LINK);
     })();
@@ -585,11 +580,11 @@
     })();
 </script>
 
-<!-- Noscript fallback for critical events -->
+<!-- Noscript fallback for critical events (NEW PIXEL ID) -->
 <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1090994927219558&ev=Lead&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1090994927219558&ev=Subscribe&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1090994927219558&ev=Contact&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1083417317718447&ev=Lead&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1083417317718447&ev=Subscribe&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1083417317718447&ev=Contact&noscript=1"/>
 </noscript>
 
 </body>
